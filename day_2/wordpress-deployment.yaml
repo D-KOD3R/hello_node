@@ -15,6 +15,13 @@ spec:
       containers:
         - name: wordpress
           image: wordpress:latest
+          resources:
+            limits:
+              cpu: "0.5"
+              memory: "512Mi"
+            requests:
+              cpu: "0.1" 
+              memory: "256Mi"
           env:
             - name: WORDPRESS_DB_HOST
               value: mysql-service
