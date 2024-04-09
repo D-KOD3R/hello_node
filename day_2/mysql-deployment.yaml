@@ -45,3 +45,7 @@ spec:
                   key: MYSQL_PASSWORD
           ports:
             - containerPort: 3306
+          volumes:
+            - name: mysql-storage
+              persistentVolumeClaim:
+                claimName: mysql-pvc

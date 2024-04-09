@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-node-js-config
+data:
+  PORT: "3000"
+  SERVICE_NAME: "Get statistics for all countries about COVID-19- THROUGH K8S"
+  SERVICE_HOST: "https://covid-193.p.rapidapi.com/countries"
